@@ -1,0 +1,9 @@
+module Mux2to1(A, B, sel, out);
+
+input A, B, sel;
+
+output out;
+
+assign out = (A & sel) | (B & ~sel);
+
+endmodule
